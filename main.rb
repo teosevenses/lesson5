@@ -87,7 +87,8 @@ class Main
 				0 - Грузовой
 				1 - Пассажирский"
 		type = gets.chomp
-		num = trains.count + 1
+		puts "Введите номер поезда"
+		num = gets.chomp 
 		if type == "0" 
 			train = CargoTrain.new(num)
 			puts "Создан грузовой поезд"
