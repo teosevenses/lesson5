@@ -181,9 +181,10 @@ class Main
 	def list_trains
  		puts "Список поездов"
  		trains.each_with_index do |x, y|
- 			puts "#{y} #{x.type}"
+ 			puts "#{y} #{x.type} #{x.num}"
  		end
  	end
+
 
  	def move_forward
  		list_trains
